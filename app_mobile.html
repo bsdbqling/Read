@@ -348,22 +348,7 @@
                     return localStorage.setItem( prefix + key,val)
                 };
 
-                var getBSONP = function (url,callback) {
-                    return $.jsonp({
-                        url : url,
-                        cache : true,
-                        callback : 'duokan_fiction_chapter',
-                        success : function (result) {
-                            debugger;
-                            var data = $.base64.decode((result));
-                            var json = decodeURIComponent(escape(data));
-                            callback(data);
-                        }
-                    })
-                };
-
                 return {
-                    getBSONP : getBSONP,
                     storageGetter:storageGetter,
                     storageSetter:storageSetter
                 }
@@ -404,72 +389,72 @@
             RootContainer.css('color',initFontColor);
             function main() {
 //                todo 整个项目的的入口函数
-                var readerModal = ReaderModel();
-                readerModal.init();
+//                var readerModal = ReaderModel();
+//                readerModal.init();
                 EventHander();
             }
-            function ReaderModel() {
-//                todo 实现和阅读器之间的数据交互方法
-                var Chapter_id;
-                var ChapterTotal;
-                var init = function(UIcallback) {
-                    /*getFictionInfo(function() {
-                     getCurChapterContent(Chapter_id, function(data){
-                     //todo...
-                     UIcallback && UIcallback(data);
-                     })
-                     })*/
-                    getFictionInfoPromise().then(function() {
-                        return getCurChapterContentPromise();
-                    }).then(function(data) {
-                        UIcallback && UIcallback(data);
-                    })
-                };
-                var getFictionInfoPromise = function() {
-                    return new Promise(function(resolve, reject){
-                        $.get('data/chapter.json', function(data){
-                            //todo 获得章节信息之后的回调
-                            if(data.result === 0) {
-                                Chapter_id = parseInt(Util.StorageGetter('last_chater_id')) || data.chapters[1].chapter_id;
-                                ChapterTotal = data.chapters.length;
-                                resolve();
-                            } else {
-                                reject();
-                            }
-                        }, 'json');
-                    })
-                }
-
-                var getCurChapterContentPromise = function() {
-                    return new Promise(function(resolve, reject) {
-                        $.get('data/data' + Chapter_id + '.json', function(data) {
-                            if(data.result == 0) {
-                                var url = data.jsonp;
-                                Util.GetJSONP(url, function(data) {
-                                    // callback && callback(data);
-                                    resolve(data);
-                                })
-                            } else {
-                                reject({msg: 'fail'});
-                            }
-                        }, 'json');
-                    })
-                }
-//                发起请求
-                var getCurChapterContent = function (chapter_id,data) {
-                    $.get('data/data'+ chapter_id+'json',function (data) {
-                        if (data.result == 0){
-                            var url =data.jsonp;
-                            Util.getBSONP(url , function (data) {
-                                callback && callback(data);
-                            });
-                        }
-                    },'json')
-                }
-                return{
-                    init : init
-                }
-            }
+//            function ReaderModel() {
+////                todo 实现和阅读器之间的数据交互方法
+//                var Chapter_id;
+//                var ChapterTotal;
+//                var init = function(UIcallback) {
+//                    /*getFictionInfo(function() {
+//                     getCurChapterContent(Chapter_id, function(data){
+//                     //todo...
+//                     UIcallback && UIcallback(data);
+//                     })
+//                     })*/
+//                    getFictionInfoPromise().then(function() {
+//                        return getCurChapterContentPromise();
+//                    }).then(function(data) {
+//                        UIcallback && UIcallback(data);
+//                    })
+//                };
+//                var getFictionInfoPromise = function() {
+//                    return new Promise(function(resolve, reject){
+//                        $.get('data/chapter.json', function(data){
+//                            //todo 获得章节信息之后的回调
+//                            if(data.result === 0) {
+//                                Chapter_id = parseInt(Util.StorageGetter('last_chater_id')) || data.chapters[1].chapter_id;
+//                                ChapterTotal = data.chapters.length;
+//                                resolve();
+//                            } else {
+//                                reject();
+//                            }
+//                        }, 'json');
+//                    })
+//                }
+//
+//                var getCurChapterContentPromise = function() {
+//                    return new Promise(function(resolve, reject) {
+//                        $.get('data/data' + Chapter_id + '.json', function(data) {
+//                            if(data.result == 0) {
+//                                var url = data.jsonp;
+//                                Util.GetJSONP(url, function(data) {
+//                                    // callback && callback(data);
+//                                    resolve(data);
+//                                })
+//                            } else {
+//                                reject({msg: 'fail'});
+//                            }
+//                        }, 'json');
+//                    })
+//                }
+////                发起请求
+//                var getCurChapterContent = function (chapter_id,data) {
+//                    $.get('data/data'+ chapter_id+'json',function (data) {
+//                        if (data.result == 0){
+//                            var url =data.jsonp;
+//                            Util.getBSONP(url , function (data) {
+//                                callback && callback(data);
+//                            });
+//                        }
+//                    },'json')
+//                }
+//                return{
+//                    init : init
+//                }
+//            }
             function ReaderBaseFrame() {
 //                todo 渲染基本UI结构
             }
