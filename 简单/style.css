@@ -1,0 +1,88 @@
+/*通用样式设置*/
+body{
+    line-height:1.4;
+    color:#000000;
+    font-family:arial;
+    font-size: 12px;
+    background:white;
+}
+input,textarea,select{
+    font-size:12px;
+    font-size:100%;    
+    font-family:arial;
+    font-family:inherit;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
+    margin:0;
+}
+h4,h5,h6{
+    font-size:1em;
+}
+ul,ol{
+    padding-left:0; 
+    list-style-type:none;
+}
+/*image with no-border*/
+a img{border:0;}
+img{border:0;}
+
+/*头部标题设置*/
+.header-css {
+font-size: 17px;
+width: 100%;
+background-color: rgb(45,45,47);
+text-align: center;
+color: #FFFFFF;
+height: 50px;
+line-height: 50px;
+letter-spacing: 5px;
+}
+.header-second-css{
+font-size: 18px;
+width: 100%;
+background-color: rgb(233,233,233);
+text-align: left;
+color: #FFFFFF;
+height: 53px;
+line-height: 49px;
+padding: 10px;
+color: rgb(36,36,36);
+}
+
+
+
+#course h4{
+font-size: 18px;
+width: 100%;
+background-color: rgb(233,233,233);
+text-align: left;
+color: #FFFFFF;
+height: 53px;
+line-height: 49px;
+padding: 10px;
+color: rgb(36,36,36);
+display: inline-block;
+}
+
+.course{
+width: 33.33%;
+text-align: center;
+margin: 0 auto;
+}
+.course .btn-word{
+     font-size: 19px;
+    line-height: 41px;
+}
+#course .col-xs-4{
+padding: 5px;
+border: 1px solid rgb(233,233,233);
+height: 80px;
+text-align: center;
+}
+.course img{
+	margin:0 auto;
+}
+#course a{
+	font-size: 19px;
+    line-height: 41px;
+}
