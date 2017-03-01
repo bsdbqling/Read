@@ -1,0 +1,118 @@
+ul, ol {
+    list-style: none;
+}
+
+.clear:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.container .home {
+    font-size: 1.4rem;
+    background: #2d2d2f;
+    color: #fff;
+    text-align: center;
+    line-height: 3.6rem;
+}
+
+.content .title {
+    font-size: 1.6rem;
+    padding-left: 1em;
+    line-height: 4.2rem;
+    background-color: #e9e9e9;
+}
+
+.content .title > span {
+    font-size: 1.2rem;
+    margin-left: 2em;
+}
+
+.content .title > i {
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    background: url(../image/sprite.png) no-repeat -240px -197px;
+    /*background-position: -240px -197px;*/
+    transform: scale(0.6);
+    vertical-align: -10px;
+    margin-left: -6px;
+}
+
+.items {
+    background: #fff;
+}
+
+.items li {
+    position: relative;
+    float: left;
+    width: 33.3333%;
+    height: 80px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+.items li.bottom-border {
+    border-bottom: 1px solid #ccc;
+}
+
+.items li.right-border {
+    border-right: 1px solid #ccc;
+}
+
+.items ul li i {
+    display: inline-block;
+    background: url(../image/sprite.png) no-repeat;
+    transform: scale(0.6);
+}
+
+.items ul li span {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    font-size: 1.4rem;
+    transform: translateX(-50%);
+}
+
+.items ul li:nth-child(1) i {
+    background-position: -100px -143px;
+    width: 42px;
+    height: 42px;
+
+}
+
+.items ul li:nth-child(2) i {
+    background-position: -66px -96px;
+    width: 56px;
+    height: 42px;
+
+}
+
+.items ul li:nth-child(3) i {
+    background-position: -145px -140px;
+    width: 42px;
+    height: 42px;
+
+}
+
+.items ul li:nth-child(4) i {
+    background-position: -186px 1px;
+    width: 54px;
+    height: 50px;
+
+}
+
+.items ul li:nth-child(5) i {
+    background-position: -1px -190px;
+    width: 44px;
+    height: 44px;
+
+}
+
+.items ul li:nth-child(6) i {
+    background-position: -122px -93px;
+    width: 42px;
+    height: 42px;
+}

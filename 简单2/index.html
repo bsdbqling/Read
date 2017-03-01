@@ -6,283 +6,144 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>简单生活</title>
-    <style>
-        html, body {
-            font-size: 62.5%;
-        }
-        body {
-            background-color: #e9e9e9;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        ul, ol {
-            list-style: none;
-        }
-        .clear:after {
-            display: block;
-            content: '';
-            clear: both;
-        }
-        .container .home {
-            font-size: 1.4rem;
-            background: #2d2d2f;
-            color: #fff;
-            text-align: center;
-            line-height: 3.6rem;
-        }
-        .content .title {
-            font-size: 1.6rem;
-            padding-left: 1em;
-            line-height: 4.2rem;
-            background-color: #e9e9e9;
-        }
-        .content .title > span {
-            font-size: 1.2rem;
-            margin-left: 2em;
-        }
-        .content .title > i {
-            display: inline-block;
-            width: 32px;
-            height: 30px;
-            background: url(image/sprite.png) no-repeat;
-            background-position: -240px -197px;
-            transform: scale(0.6);
-            vertical-align: -10px;
-            margin-left: -6px;
-        }
-        .items {
-            background: #fff;
-        }
-        .items li {
-            position: relative;
-            float: left;
-            width: 33.3333%;
-            height: 80px;
-            cursor: pointer;
-            text-align: center;
-            padding-top: 8px;
-            box-sizing: border-box;
-        }
-        .items li.bottom-border {
-            border-bottom: 1px solid #ccc;
-        }
-        .items li.right-border {
-            border-right: 1px solid #ccc;
-        }
-        .items ul li i {
-            display: inline-block;
-            background: url(image/sprite.png) no-repeat;
-            transform: scale(0.6);
-        }
-        .items ul li span {
-            position: absolute;
-            top: 50px;
-            left: 50%;
-            font-size: 1.4rem;
-            transform: translateX(-50%);
-        }
-        .items ul li:nth-child(1) i {
-            background-position: -100px -143px;
-            width: 42px;
-            height: 42px;
-
-        }
-        .items ul li:nth-child(2) i {
-            background-position: -66px -96px;
-            width: 56px;
-            height: 42px;
-
-        }
-        .items ul li:nth-child(3) i {
-            background-position: -145px -140px;
-            width: 42px;
-            height: 42px;
-
-        }
-        .items ul li:nth-child(4) i {
-            background-position: -186px 1px;
-            width:54px;
-            height: 50px;
-
-        }
-        .items ul li:nth-child(5) i {
-            background-position: -1px -190px;
-            width: 44px;
-            height: 44px;
-
-        }
-        .items ul li:nth-child(6) i {
-            background-position: -122px -93px;
-            width: 42px;
-            height: 42px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<!--模块一-->
-    <div class="container">
-        <header class="home">简单＋，家简单</header>
-        <div class="content">
-            <div class="title">
-                简单＋，方便
-                <span>正在进行的任务</span>
-                <i></i>
-            </div>
-            <div class="items">
-                <ul class="clear">
-                    <li class="bottom-border right-border">
-                        <i></i><br>
-                        <span>搬家</span>
-                    </li>
-                    <li class="bottom-border right-border">
-                        <i></i><br>
-                        <span>买房</span>
-                    </li>
-                    <li class="bottom-border">
-                        <i></i><br>
-                        <span>装修</span>
-                    </li>
-                    <li class="right-border">
-                        <i></i><br>
-                        <span>婚纱摄影</span>
-                    </li>
-                    <li class="right-border">
-                        <i></i><br>
-                        <span>婚庆服务</span>
-                    </li>
-                    <li>
-                        <i></i><br>
-                        <span>简单商城</span>
-                    </li>
-                </ul>
-            </div>
+<div class="container">
+    <!--简单＋ ，方便-->
+    <header class="home">简单＋，家简单</header>
+    <div class="content">
+        <div class="title">
+            简单＋，方便
+            <span>正在进行的任务</span>
+            <i></i>
         </div>
-    </div>
-    <!--模块二-->
-    <div class="container">
-        <div class="content">
-            <div class="title">
-简单24分钟
-            </div>
-            <div class="items">
-                <ul class="clear">
-                    <li class="bottom-border right-border">
-                        <i 
-                        	style="background-position: -93px -189px;
+        <div class="items">
+            <ul class="one clear">
+                <li class="bottom-border right-border">
+                    <i></i><br>
+                    <span>搬家</span>
+                </li>
+                <li class="bottom-border right-border">
+                    <i></i><br>
+                    <span>买房</span>
+                </li>
+                <li class="bottom-border">
+                    <i></i><br>
+                    <span>装修</span>
+                </li>
+                <li class="right-border">
+                    <i></i><br>
+                    <span>婚纱摄影</span>
+                </li>
+                <li class="right-border">
+                    <i></i><br>
+                    <span>婚庆服务</span>
+                </li>
+                <li>
+                    <i></i><br>
+                    <span>简单商城</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--简单24分钟-->
+        <div class="title">简单24分钟</div>
+        <div class="items">
+            <ul class="two clear">
+                <li class="bottom-border right-border">
+                    <i style="background-position: -93px -189px;
     								width: 42px;
     								height: 42px;"></i><br>
-                        <span>柴&nbsp;</span>
-                    </li>
-                    <li class="bottom-border right-border">
-                        <i
-                        	style="background-position: -238px -148px;
+                    <span>柴</span>
+                </li>
+                <li class="bottom-border right-border">
+                    <i style="background-position: -238px -148px;
     								width: 42px;
     								height: 42px;"></i><br>
-                        <span>米&nbsp;</span>
-                    </li>
-                    <li class="bottom-border">
-                        <i
-                        	style="background-position: -239px -51px;
+                    <span>米</span>
+                </li>
+                <li class="bottom-border">
+                    <i style="background-position: -239px -51px;
     									width: 42px;
     									height: 47px;"></i><br>
-                        <span>油</span>
-                    </li>
-                    <li class="right-border">
-                        <i
-                        	style="    background-position: -243px 1px;
+                    <span>油</span>
+                </li>
+                <li class="right-border">
+                    <i style="    background-position: -243px 1px;
    										 width: 42px;
    										 height: 47px;"></i><br>
-                        <span>盐</span>
-                    </li>
-                    <li class="right-border">
-                        <!--<i></i><br>
-                        <span>婚庆服务</span>-->
-                    </li>
-                    <li>
-                        <!--<i></i><br>
-                        <span>简单商城</span>-->
-                    </li>
-                </ul>
-            </div>
+                    <span>盐</span>
+                </li>
+                <li class="right-border"></li>
+            </ul>
         </div>
-    </div>
-    
-    	<!--模块三-->
-    <div class="container">
-        <div class="content">
-            <div class="title">
-                简单＋，服务
-            </div>
-            <div class="items">
-                <ul class="clear">
-                    <li class="bottom-border right-border">
-                        <i
-                        	style="    background-position: -238px -103px;
+
+        <!--简单＋，服务-->
+        <div class="title">简单＋，服务</div>
+        <div class="items">
+            <ul class="three clear">
+                <li class="bottom-border right-border">
+                    <i style="    background-position: -238px -103px;
     									width: 42px;
     									height: 47px;"></i><br>
-                        <span>交水电</span>
-                    </li>
-                    <li class="bottom-border right-border">
-                        <i
-                        	style="    background-position: -2px -144px;
+                    <span>交水电</span>
+                </li>
+                <li class="bottom-border right-border">
+                    <i style="    background-position: -2px -144px;
    										 width: 47px;
   									 	 height: 42px;"></i><br>
-                        <span>天气查询</span>
-                    </li>
-                    <li class="bottom-border">
-                        <i
-                        	style="    background-position: -188px -140px;
+                    <span>天气查询</span>
+                </li>
+                <li class="bottom-border">
+                    <i style="    background-position: -188px -140px;
     									width: 47px;
     									height: 42px;"></i><br>
-                        <span>开锁</span>
-                    </li>
-                    <li class="right-border bottom-border">
-                        <i
-                        	style="    background-position: -54px -142px;
+                    <span>开锁</span>
+                </li>
+                <li class="right-border bottom-border">
+                    <i style="    background-position: -54px -142px;
     									width: 42px;
     									height: 42px;"></i><br>
-                        <span>迁户口</span>
-                    </li>
-                    <li class="right-border bottom-border" style="padding-top: 0px;">
-                        <i
-                        	style="background-position: -124px 0px;
+                    <span>迁户口</span>
+                </li>
+                <li class="right-border bottom-border" style="padding-top: 0px;">
+                    <i style="background-position: -124px 0px;
     								width: 57px;
     								height: 76px;"></i><br>
-                        <span>注册公司</span>
-                    </li>
-                    <li class="right-border bottom-border">
-                        <i
-                        	style="    background-position: -47px -187px;
+                    <span>注册公司</span>
+                </li>
+                <li class="right-border bottom-border">
+                    <i style="    background-position: -47px -187px;
     									width: 47px;
     									height: 47px;"></i><br>
-                        <span style="width: 91px;">工商信息查询</span>
-                    </li>
-                     <li class="right-border">
-                        <i
-                        	style="      background-position: -185px -50px;
+                    <span style="width: 91px;">工商信息查询</span>
+                </li>
+                <li class="right-border">
+                    <i style="      background-position: -185px -50px;
     										width: 52px;
    											height: 52px;"></i><br>
-                        <span style="width: 91px;">域名注册查询</span>
-                    </li>
-					<li class="bottom-border right-border">
-                        <!--<i
-                        	style="    background-position: -238px -103px;
-    									width: 42px;
-    									height: 47px;"></i><br>
-                        <span>交水电</span>-->
-                    </li>
-                    <li class="bottom-border right-border">
-                        <!--<i
-                        	style="    background-position: -238px -103px;
-    									width: 42px;
-    									height: 47px;"></i><br>
-                        <span>交水电</span>-->
-                    </li>
-                </ul>
-            </div>
+                    <span style="width: 91px;">域名注册查询</span>
+                </li>
+                <li class="right-border"></li>
+            </ul>
         </div>
+
     </div>
+</div>
 </body>
+<script>
+    $('.one li').click(function () {
+        var item = $(this).index();  //获取索引下标 也从0开始
+        switch (item) {
+            case 0:
+                window.location.href = 'view/move.html';
+                break;
+            default:
+                alert(item);
+        }
+    })
+</script>
 </html>
